@@ -6,10 +6,10 @@ require 'discombobulator/version'
 Gem::Specification.new do |spec|
   spec.name          = "discombobulator"
   spec.version       = Discombobulator::VERSION
-  spec.authors       = ["Paweł Obrok"]
-  spec.email         = ["pawel.obrok@gmail.com"]
-  spec.summary       = %q{Discombobulates}
-  spec.description   = %q{Discombobulates}
+  spec.authors       = ["Paweł Obrok", "Norbert Wojtowicz"]
+  spec.email         = ["pawel.obrok@gmail.com", "wojtowicz.norbert@gmail.com"]
+  spec.summary       = "Discombobulate for the greater good!"
+  spec.description   = spec.summary
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,6 +18,6 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.5"
+  spec.add_development_dependency "bundler", ">= 1.3"
   spec.add_development_dependency "rake"
 end
