@@ -1,5 +1,6 @@
 require "discombobulator/version"
+require "singleton"
 
-module Discombobulator
-  # Your code goes here...
+class Discombobulator
+  include Singleton
 end
