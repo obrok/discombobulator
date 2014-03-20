@@ -5,7 +5,7 @@ Discombobulator::Config.instance.add_plugin(lambda { puts "You made it this time
 
 class Discombobulator
   def method_missing(_)
-    plugins[rand(plugins.size)].call
+    plugins.sample.call
     Discombobulator.new
   end
 
