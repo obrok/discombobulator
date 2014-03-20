@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Discombobulator::VERSION
   spec.authors       = ["Paweł Obrok"]
   spec.email         = ["pawel.obrok@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Discombobulates}
+  spec.description   = %q{Discombobulates}
   spec.homepage      = ""
   spec.license       = "MIT"
 
