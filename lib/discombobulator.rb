@@ -1,15 +1,10 @@
 require "discombobulator/version"
 require "discombobulator/config"
+require "discombobulator/dodge_attack"
 require "discombobulator/super_call"
+require "discombobulator/swap_globals"
 
 $DISCOMBOBULATOR_SAFETY_FEATURE = 42
-
-Discombobulator::Config.instance.add_plugin(
-  ->(meth, *args, &block) do
-    puts "You made it this time!"
-    Discombobulator.new
-  end
-)
 
 class Discombobulator
   def self.method_missing(meth, *args, &block)
