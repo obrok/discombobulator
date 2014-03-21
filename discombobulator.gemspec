@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["pawel.obrok@gmail.com", "wojtowicz.norbert@gmail.com"]
   spec.summary       = "Discombobulate for the greater good!"
   spec.description   = spec.summary
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/obrok/discombobulator"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
