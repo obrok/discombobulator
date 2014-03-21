@@ -33,3 +33,9 @@ class Gem
   end
 end
 ```
+
+# SHOULD I USE THIS IN MY SYSTEM?
+
+Yes. I am being completely serious. You should.
+
+Definitely.
