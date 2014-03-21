@@ -1,9 +1,7 @@
-class Discombobulator
-  class DodgeAttack
-    def self.call(meth, *args, &block)
-      puts "You made it this time!"
-      Discombobulator.new
-    end
+class Discombobulator::DodgeAttack
+  def self.call(meth, *args, &block)
+    puts "You made it this time!"
+    Discombobulator.new
   end
 end
 

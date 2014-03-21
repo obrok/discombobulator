@@ -1,11 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'discombobulator/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "discombobulator"
-  spec.version       = Discombobulator::VERSION
+  spec.version       = "0.0.2"
   spec.authors       = ["Paweł Obrok", "Norbert Wojtowicz"]
   spec.email         = ["pawel.obrok@gmail.com", "wojtowicz.norbert@gmail.com"]
   spec.summary       = "Discombobulate for the greater good!"

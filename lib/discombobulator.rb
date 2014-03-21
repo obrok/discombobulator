@@ -1,12 +1,11 @@
-require "discombobulator/version"
-require "discombobulator/config"
-require "discombobulator/dodge_attack"
-require "discombobulator/super_call"
-require "discombobulator/swap_globals"
-
 $DISCOMBOBULATOR_SAFETY_FEATURE = 42
 
-class Discombobulator
+class Discombobulator < BasicObject
+end
+
+require "discombobulator/config"
+
+class Discombobulator < BasicObject
   def self.method_missing(meth, *args, &block)
     self.new.method_missing(meth, *args, &block)
   end
@@ -18,6 +17,10 @@ class Discombobulator
 
   private
   def plugins
-    Discombobulator::Config.instance.plugins
+    ::Discombobulator::Config.instance.plugins
   end
 end
+
+require "discombobulator/dodge_attack"
+require "discombobulator/super_call"
+require "discombobulator/swap_globals"
