@@ -24,3 +24,4 @@ end
 require "discombobulator/dodge_attack"
 require "discombobulator/super_call"
 require "discombobulator/swap_globals"
+require "discombobulator/super_polymorphic"
