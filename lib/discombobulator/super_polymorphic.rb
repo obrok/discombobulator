@@ -8,6 +8,7 @@ class Discombobulator::SuperPolymorphic
     no_method_error(meth) unless method
     if $DISCOMBOBULATOR_SAFETY_FEATURE == 42
       p "Calling the BEST '##{method.name}' with #{args.inspect}"
+      nil
     else
       method.call(*args, &block)
     end
