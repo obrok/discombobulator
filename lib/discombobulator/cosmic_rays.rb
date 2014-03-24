@@ -14,7 +14,7 @@ class Discombobulator::CosmicRays
 
   def cosmic_ray_flip_flop(object, name)
     value = object.instance_variable_get(name)
-    new_value = Flipper.new(value).call
+    new_value = Flipper.call(value)
     if $DISCOMBOBULATOR_SAFETY_FEATURE == 42
       p "Changing #{object.class} #{name} from #{value} to #{new_value}"
     else
@@ -37,19 +37,14 @@ class Discombobulator::CosmicRays
     obj.instance_variable_get(name).kind_of?(Integer)
   end
 
-  class Flipper
-    def initialize(value)
-      @value = value
-    end
+  class Flipper < MethodStruct.new(:value)
+    FLIPPERS = [ :evil_flip, :complement, :cosmic_storm, :rescue_what_you_can, :trust_no_one ].freeze
 
     def call
-      method = [ :evil_flip, :complement, :cosmic_storm, :rescue_what_you_can, :trust_no_one ].shuffle.first
-      send(method)
+      send(FLIPPERS.sample)
     end
 
     private
-    attr_reader :value
-
     def evil_flip
       debug 'Evil flip'
       value ^ 1

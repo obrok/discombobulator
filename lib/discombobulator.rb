@@ -1,3 +1,5 @@
+require 'method_struct'
+
 $DISCOMBOBULATOR_SAFETY_FEATURE = 42
 
 class Discombobulator < BasicObject
