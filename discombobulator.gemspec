@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "discombobulator"
-  spec.version       = "0.1.1"
+  spec.version       = "0.1.2"
   spec.authors       = ["Paweł Obrok", "Norbert Wojtowicz"]
   spec.email         = ["pawel.obrok@gmail.com", "wojtowicz.norbert@gmail.com"]
   spec.summary       = "Discombobulate for the greater good!"
