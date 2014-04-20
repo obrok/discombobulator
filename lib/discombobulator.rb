@@ -23,8 +23,14 @@ class Discombobulator < BasicObject
   end
 end
 
-require "discombobulator/dodge_attack"
-require "discombobulator/super_call"
-require "discombobulator/swap_globals"
-require "discombobulator/super_polymorphic"
-require "discombobulator/cosmic_rays"
+
+[
+  'cosmic_rays',
+  'dodge_attack',
+  'pseudo_random',
+  'super_call',
+  'super_polymorphic',
+  'swap_globals',
+].each do |plugin|
+  require_relative "discombobulator/#{plugin}"
+end
